@@ -19,7 +19,6 @@ class View
 
     public static function display()
     {
-        // boucle de création de variables
         foreach (self::$variables as $name => $value)
         {
             $$name = $value;

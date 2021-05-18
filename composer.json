@@ -1,5 +1,5 @@
 {
-    "name": "Gr4LyX/gestion-de-courrier",
+    "name": "vince/review-php",
     "type": "project",
     "require": {
         "twbs/bootstrap": "^4.5",

@@ -1,0 +1,89 @@
+.boutton {
+   position: relative;
+   top: 250px;
+}
+
+.btnlog {
+   position: relative;
+   top: 100px;
+   left: 40px;
+}
+
+.btnup {
+   position: relative;
+   top: 50px;
+   left: 40px;
+}
+
+.btnesc {
+   position: relative;
+   right: 330px;
+   top: 300px;
+}
+
+.btnesc2 {
+   position: relative;
+   right: 330px;
+   top: 250px;
+}
+
+.card {
+   position: relative;
+   height: 50rem;
+   align-items: center;
+   text-align: center;
+   left: 550px;
+   top: 60px;
+   border-radius: 15px;
+   background-color: #e4fbff;
+}
+
+.Image {
+   position: relative;
+   top: 330px;
+   left: 210px;
+   width: 400px;
+   margin: auto;
+}
+
+.Image2 {
+   position: relative;
+   top: 172px;
+   left: 210px;
+   width: 400px;
+   margin: auto;
+}
+
+.Image3 {
+   position: relative;
+   top: 104px;
+   left: 210px;
+   width: 400px;
+}
+
+.titre {
+   position: relative;
+   font-size: 50px;
+}
+
+.paragraphe1 {
+   position: relative;
+   top: 300px;
+   font-size: 30px;
+}
+
+.paragraphe2 {
+   position: relative;
+   top: 300px;
+   font-size: 30px;
+}
+
+.container {
+   position: relative ;
+   top: 40px;
+}
+
+.container2 {
+   position: relative;
+   bottom: 40px;
+}
