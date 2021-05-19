@@ -1,6 +1,6 @@
 .boutton {
    position: relative;
-   top: 250px;
+   top: 150px;
 }
 
 .btnlog {
@@ -17,17 +17,17 @@
 
 .btnesc {
    position: relative;
-   right: 330px;
-   top: 300px;
+   right: 348px;
+   top: 312px;
 }
 
 .btnesc2 {
    position: relative;
    right: 330px;
-   top: 250px;
+   top: 220px;
 }
 
-.card {
+.carde {
    position: relative;
    height: 50rem;
    align-items: center;
@@ -35,12 +35,14 @@
    left: 550px;
    top: 60px;
    border-radius: 15px;
-   background-color: #e4fbff;
+   -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(100px) grayscale(0.5) opacity(0.8);
+    background-color: rgba(255, 255, 255, 0.2);;
 }
 
 .Image {
    position: relative;
-   top: 330px;
+   top: 206px;
    left: 210px;
    width: 400px;
    margin: auto;
@@ -48,17 +50,59 @@
 
 .Image2 {
    position: relative;
-   top: 172px;
-   left: 210px;
+   top: 180px;
+   left: 151px;
    width: 400px;
    margin: auto;
 }
 
 .Image3 {
    position: relative;
-   top: 104px;
-   left: 210px;
+   top: 88px;
+   left: 76px;
    width: 400px;
+}
+
+.logo-email {
+   position: relative;
+   bottom: 272px;
+   right: 85px;
+   width: 40px;
+}
+
+.logo-password {
+   position: relative;
+   bottom: 200px;
+   right: 145px;
+   width: 70px;
+}
+
+.logo-email1 {
+   position: relative;
+   bottom: 272px;
+   right: 20px;
+   width: 40px;
+}
+
+.logo-password1 {
+   position: relative;
+   bottom: 200px;
+   right: 80px;
+   width: 70px;
+}
+
+.logo-user {
+   position: relative;
+   bottom: 420px;
+   right: 156px;
+   width: 70px;
+}
+
+.logo-user1 {
+   position: relative;
+   bottom: 345px;
+   right: 230px;
+   width: 70px;
 }
 
 .titre {
@@ -66,15 +110,31 @@
    font-size: 50px;
 }
 
+.titre1 {
+   position: relative;
+   top: 50px;
+   font-size: 50px;
+}
+
+.titre2 {
+   position: relative;
+   top: 30px;
+   font-size: 50px;
+}
+
+h1 {
+   font-family: Impact, fantasy;
+}
+
 .paragraphe1 {
    position: relative;
-   top: 300px;
+   top: 280px;
    font-size: 30px;
 }
 
 .paragraphe2 {
    position: relative;
-   top: 300px;
+   top: 280px;
    font-size: 30px;
 }
 
@@ -86,4 +146,97 @@
 .container2 {
    position: relative;
    bottom: 40px;
+}
+
+.contact {
+   position: relative;
+   font-size: x-small;
+   top: 470px;
+   text-align: justify;
+   right: 100px;
+   left: 10px;
+}
+
+.email1 {
+   height: 50px;
+   border-radius: 15px;
+   -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(100px) grayscale(0.5) opacity(0.8);
+    background-color: rgba(116, 116, 116, 0.301);
+    text-align: center;
+}
+
+.email1::placeholder {
+   position: relative;
+   right: 190px;
+}
+
+.mdp1 {
+   height: 50px;
+   border-radius: 15px;
+   -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(100px) grayscale(0.5) opacity(0.8);
+    background-color: rgba(116, 116, 116, 0.301);
+    text-align: center;
+}
+
+.mdp1::placeholder {
+   position: relative;
+   right: 190px;
+}
+
+.name {
+   height: 50px;
+   border-radius: 15px;
+   -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(100px) grayscale(0.5) opacity(0.8);
+    background-color: rgba(116, 116, 116, 0.301);
+    text-align: center;
+}
+
+.name::placeholder {
+   position: relative;
+   right: 225px;
+}
+
+.firstname {
+   height: 50px;
+   border-radius: 15px;
+   -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(100px) grayscale(0.5) opacity(0.8);
+    background-color: rgba(116, 116, 116, 0.301);
+    text-align: center;
+}
+
+.firstname::placeholder {
+   position: relative;
+   right: 212px;
+}
+
+.email2 {
+   height: 50px;
+   border-radius: 15px;
+   -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(100px) grayscale(0.5) opacity(0.8);
+    background-color: rgba(116, 116, 116, 0.301);
+    text-align: center;
+}
+
+.email2::placeholder {
+   position: relative;
+   right: 195px;
+}
+
+.mdp2 {
+   height: 50px;
+   border-radius: 15px;
+   -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(100px) grayscale(0.5) opacity(0.8);
+    background-color: rgba(116, 116, 116, 0.301);
+    text-align: center;
+}
+
+.mdp2::placeholder {
+   position: relative;
+   right: 190px;
 }
