@@ -3,6 +3,11 @@
    top: 150px;
 }
 
+.boutton1 {
+   position: relative;
+   top: 20px;
+}
+
 .btnlog {
    position: relative;
    top: 100px;
@@ -24,7 +29,50 @@
 .btnesc2 {
    position: relative;
    right: 330px;
-   top: 220px;
+   top: 250px;
+}
+
+.btn-envoi {
+   position: relative;
+   right: 60px;
+   top: 20px;
+}
+
+.btn-reception {
+   position: relative;
+   left: 60px;
+   top: 20px;
+   width: 220.98px;
+}
+
+.btn-recherche {
+   position: relative;
+   width: 220.98px;
+   top: 80px;
+   
+}
+
+.btn-ajout-courrier {
+   position: relative;
+   top: 180px;
+   right: 180px;
+}
+
+.btn-quitter1 {
+   position: relative;
+   top: 180px;
+   left: 70px;
+   width: 220.98px;
+}
+
+.btn-quitter {
+   position: relative;
+   top: 130px;
+   width: 220.98px;
+}
+
+.recherche {
+   justify-content: center;
 }
 
 .carde {
@@ -36,8 +84,14 @@
    top: 60px;
    border-radius: 15px;
    -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(100px) grayscale(0.5) opacity(0.8);
-    background-color: rgba(255, 255, 255, 0.2);;
+   backdrop-filter: blur(100px) grayscale(0.5) opacity(0.8);
+   background-color: rgba(255, 255, 255, 0.2);
+   ;
+}
+
+.divimage {
+   position: relative;
+   bottom: 73px;
 }
 
 .Image {
@@ -50,7 +104,7 @@
 
 .Image2 {
    position: relative;
-   top: 180px;
+   top: 172px;
    left: 151px;
    width: 400px;
    margin: auto;
@@ -58,50 +112,64 @@
 
 .Image3 {
    position: relative;
-   top: 88px;
+   top: 104px;
    left: 76px;
+   width: 400px;
+}
+
+.Image4 {
+   position: relative;
+   top: 216px;
+   left: 210px;
    width: 400px;
 }
 
 .logo-email {
    position: relative;
-   bottom: 272px;
-   right: 85px;
+   bottom: 255px;
+   right: 90px;
    width: 40px;
 }
 
 .logo-password {
    position: relative;
-   bottom: 200px;
-   right: 145px;
+   bottom: 185px;
+   right: 150px;
    width: 70px;
 }
 
 .logo-email1 {
    position: relative;
-   bottom: 272px;
-   right: 20px;
+   bottom: 255px;
+   right: 30px;
    width: 40px;
 }
 
 .logo-password1 {
    position: relative;
-   bottom: 200px;
-   right: 80px;
+   bottom: 186px;
+   right: 92px;
+   width: 70px;
+}
+
+.logo-password2{
+   position: relative;
+   bottom: 260px;
+   right: 684px;
    width: 70px;
 }
 
 .logo-user {
    position: relative;
-   bottom: 420px;
-   right: 156px;
+   bottom: 330px;
+   right: 166px;
    width: 70px;
 }
 
 .logo-user1 {
    position: relative;
-   bottom: 345px;
-   right: 230px;
+   bottom: 405px;
+   right: 240px;
    width: 70px;
 }
 
@@ -122,6 +190,18 @@
    font-size: 50px;
 }
 
+.titre3 {
+   font-size: 50px;
+   position: relative;
+   top: 70px;
+}
+
+.titre4 {
+   font-size: 40px;
+   position: relative;
+   right: 190px;
+}
+
 h1 {
    font-family: Impact, fantasy;
 }
@@ -139,7 +219,7 @@ h1 {
 }
 
 .container {
-   position: relative ;
+   position: relative;
    top: 40px;
 }
 
@@ -157,13 +237,22 @@ h1 {
    left: 10px;
 }
 
+.contact1 {
+   position: relative;
+   font-size: x-small;
+   top: 576px;
+   text-align: justify;
+   right: 100px;
+   left: 10px;
+}
+
 .email1 {
    height: 50px;
    border-radius: 15px;
    -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(100px) grayscale(0.5) opacity(0.8);
-    background-color: rgba(116, 116, 116, 0.301);
-    text-align: center;
+   backdrop-filter: blur(100px) grayscale(0.5) opacity(0.8);
+   background-color: rgba(116, 116, 116, 0.301);
+   text-align: center;
 }
 
 .email1::placeholder {
@@ -175,9 +264,9 @@ h1 {
    height: 50px;
    border-radius: 15px;
    -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(100px) grayscale(0.5) opacity(0.8);
-    background-color: rgba(116, 116, 116, 0.301);
-    text-align: center;
+   backdrop-filter: blur(100px) grayscale(0.5) opacity(0.8);
+   background-color: rgba(116, 116, 116, 0.301);
+   text-align: center;
 }
 
 .mdp1::placeholder {
@@ -189,9 +278,9 @@ h1 {
    height: 50px;
    border-radius: 15px;
    -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(100px) grayscale(0.5) opacity(0.8);
-    background-color: rgba(116, 116, 116, 0.301);
-    text-align: center;
+   backdrop-filter: blur(100px) grayscale(0.5) opacity(0.8);
+   background-color: rgba(116, 116, 116, 0.301);
+   text-align: center;
 }
 
 .name::placeholder {
@@ -203,9 +292,9 @@ h1 {
    height: 50px;
    border-radius: 15px;
    -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(100px) grayscale(0.5) opacity(0.8);
-    background-color: rgba(116, 116, 116, 0.301);
-    text-align: center;
+   backdrop-filter: blur(100px) grayscale(0.5) opacity(0.8);
+   background-color: rgba(116, 116, 116, 0.301);
+   text-align: center;
 }
 
 .firstname::placeholder {
@@ -217,9 +306,9 @@ h1 {
    height: 50px;
    border-radius: 15px;
    -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(100px) grayscale(0.5) opacity(0.8);
-    background-color: rgba(116, 116, 116, 0.301);
-    text-align: center;
+   backdrop-filter: blur(100px) grayscale(0.5) opacity(0.8);
+   background-color: rgba(116, 116, 116, 0.301);
+   text-align: center;
 }
 
 .email2::placeholder {
@@ -231,12 +320,156 @@ h1 {
    height: 50px;
    border-radius: 15px;
    -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(100px) grayscale(0.5) opacity(0.8);
-    background-color: rgba(116, 116, 116, 0.301);
-    text-align: center;
+   backdrop-filter: blur(100px) grayscale(0.5) opacity(0.8);
+   background-color: rgba(116, 116, 116, 0.301);
+   text-align: center;
 }
 
 .mdp2::placeholder {
    position: relative;
    right: 190px;
+}
+
+.date-envoi {
+   width: 160px;
+   position: relative;
+   right: 13px;
+   border-radius: 15px;
+   -webkit-backdrop-filter: blur(15px);
+   backdrop-filter: blur(100px) grayscale(0.5) opacity(0.8);
+   background-color: rgba(116, 116, 116, 0.301);
+}
+
+.datenvoi {
+   position: relative;
+   right: 15px;
+}
+
+.email3 {
+   width: 330px;
+   position: relative;
+   top: 10px;
+   right: 13px;
+   border-radius: 15px;
+   -webkit-backdrop-filter: blur(15px);
+   backdrop-filter: blur(100px) grayscale(0.5) opacity(0.8);
+   background-color: rgba(116, 116, 116, 0.301);
+}
+
+.destinataire {
+   position: relative;
+   top: 10px;
+   right: 18px;
+}
+
+.destinataire1 {
+   position: relative;
+   top: 10px;
+   right: 24px;
+}
+
+.nature {
+   width: 330px;
+   position: relative;
+   top: 20px;
+   right: 13px;
+   border-radius: 15px;
+   -webkit-backdrop-filter: blur(15px);
+   backdrop-filter: blur(100px) grayscale(0.5) opacity(0.8);
+   background-color: rgba(116, 116, 116, 0.301);
+}
+
+.naturela {
+   position: relative ;
+   top: 22px;
+   right: 36px;
+}
+
+.naturela1 {
+   position: relative ;
+   top: 22px;
+   right: 39px;
+}
+
+.fichier {
+   width: 330px;
+   position: relative;
+   left: 120px;
+   border-radius: 15px;
+   -webkit-backdrop-filter: blur(15px);
+   backdrop-filter: blur(100px) grayscale(0.5) opacity(0.8);
+   background-color: rgba(116, 116, 116, 0.301);
+}
+
+.piece {
+   position: relative;
+   top: 40px;
+   right: 332px;
+}
+
+.piece1 {
+   position: relative;
+   top: 40px;
+   right: 345px;
+}
+
+.mode-envoi {
+   width: 330px;
+   position: relative;
+   left: 120px;
+   border-radius: 15px;
+   -webkit-backdrop-filter: blur(15px);
+   backdrop-filter: blur(100px) grayscale(0.5) opacity(0.8);
+   background-color: rgba(116, 116, 116, 0.301);
+}
+
+.modenvoi {
+   position: relative;
+   right: 340px;
+   bottom: 30px;
+}
+
+.modrecep {
+   position: relative;
+   right: 336px;
+   bottom: 30px;
+}
+
+.Commentaire {
+   width: 420px;
+   position: relative;
+   left: 120px;
+   bottom: 90px;
+   border-radius: 15px;
+   -webkit-backdrop-filter: blur(15px);
+   backdrop-filter: blur(100px) grayscale(0.5) opacity(0.8);
+   background-color: rgba(116, 116, 116, 0.301);
+}
+
+.commentaire {
+   position: relative;
+   bottom: 100px;
+   right: 346px;
+}
+
+.enregistre-par {
+   width: 330px;
+   position: relative;
+   bottom: 265px;
+   left: 440px;
+   border-radius: 15px;
+   -webkit-backdrop-filter: blur(15px);
+   backdrop-filter: blur(100px) grayscale(0.5) opacity(0.8);
+   background-color: rgba(116, 116, 116, 0.301);
+}
+
+.enregistre {
+   position: relative;
+   bottom: 305px;
+   left: 240px;
+}
+
+.formulaire {
+   position: relative;
+   top: 50px;
 }

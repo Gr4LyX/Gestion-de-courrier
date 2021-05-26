@@ -2,7 +2,7 @@
     "name": "vince/review-php",
     "type": "project",
     "require": {
-        "twbs/bootstrap": "^4.5",
+        "twbs/bootstrap": "^5.0",
         "components/jquery": "^3.5"
     },
     "license": "GPL 3.0",
