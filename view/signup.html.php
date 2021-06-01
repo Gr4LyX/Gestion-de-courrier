@@ -12,7 +12,7 @@
         <div class="card-img-overlay">
             <h1 class="titre2">Inscription</h1>
             <div class="container2">
-                <form action="?page=user-insert" method="post" class="form-group" style="margin-top:100px;">
+                <form action="?page=user-insert" method="POST" class="form-group" style="margin-top:100px;">
                     <label for=" nom"></label>
                     <input class="form-control name" type="text" name="last_name" id="last_name" placeholder="Entrez votre nom">
                     <label for="prenom"></label>
@@ -24,7 +24,7 @@
                     <label for="password"></label>
                     <input class="form-control mdp2" type="password" name="password" id="password"
                         placeholder="Entrez votre mot de passe">
-                    <button class="btn btn-outline-primary btn-lg btnup">S'inscrire</button>
+                    <button type="submit" class="btn btn-outline-primary btn-lg btnup">S'inscrire</button>
                     <a href="?page=home" class="btn btn-outline-primary btn-lg btnesc2">Retour</a>
                 </form>
                     <img class="logo-email1" src="images/logo-email.png" alt="logo email">

@@ -6,33 +6,6 @@ use Valarep\View;
 
 class UserController{
 
-    public static function listUser($page){
-        $users = User::getAll();
-        View::setTemplate('users');
-        View::bindVariable("users", $users);
-        View::bindVariable('page', $page);
-        View::display();
-    }
-
-    public static function profilUser($page, int $id){
-        $id_user = filter_var($id, FILTER_VALIDATE_INT);
-        if(empty($id_user)){
-            echo "Erreur";
-        } else {
-                $user = User::findById($id_user);
-            if($user){
-                View::setTemplate('profil');
-                View::bindVariable("user",$user);
-                View::bindVariable("page",$page);
-                View::display(); 
-            } 
-            else {
-                echo "L'identifiant utilisé n'existe pas";
-                die();
-            }     
-        }
-    }
-
     public static function signUp($page){
         View::setTemplate('signup');
         View::bindVariable("page",$page);
@@ -69,11 +42,11 @@ class UserController{
         View::display();
     }
 
-    public static function insertUser($last_name, $first_name, $adresse_utilisateur, $password){
+    public static function insertUser($last_name, $first_name, $mail, $password){
         $user = new User;
         $user->last_name = $last_name;
         $user->first_name = $first_name;
-        $user->adresse_utilisateur = $adresse_utilisateur;
+        $user->mail = $mail;
         $user->password = $password;
         $user->register();
         $users = $user->getAll();
@@ -92,6 +65,7 @@ class UserController{
             unset($_SESSION['user']);
             View::setTemplate('signin');
             View::display();
+            echo "L'identifiant utilisé n'existe pas";
         }
     }
 }

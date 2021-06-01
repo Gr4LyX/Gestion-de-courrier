@@ -15,17 +15,17 @@ class User{
     public function register(){
         $dbh = Dao::openDatabase();
         $query = "INSERT INTO `utilisateur` (`nom_utilisateur`, `prenom_utilisateur`,`adresse_utilisateur`, `mot_de_passe`,) 
-VALUES (:nom_utilisateur, :prenom_utilisateur, :adresse_utilisateur, :mot_de_passe,);";
+VALUES (:last_name, :first_name, :mail, :password,);";
         $sth = $dbh->prepare($query);
-        $sth->bindParam(":nom_utilisateur",$this->last_name);
-        $sth->bindParam(":prenom_utilisateur", $this->first_name);
-        $sth->bindParam(":adresse_utilisateur", $this->mail);
-        $sth->bindParam(":mot_de_passe", $this->password);
+        $sth->bindParam(":last_name",$this->last_name);
+        $sth->bindParam(":first_name", $this->first_name);
+        $sth->bindParam(":mail", $this->mail);
+        $sth->bindParam(":password", $this->password);
         $sth->execute();
         Dao::closeDatabase();
     }
 
-    public static function getAll(){
+    public function getAll(){
         $dbh = Dao::openDatabase();
         $query = "SELECT * FROM `utilisateur`;";
         $sth = $dbh->prepare($query);
@@ -36,36 +36,12 @@ VALUES (:nom_utilisateur, :prenom_utilisateur, :adresse_utilisateur, :mot_de_pas
         return $items;
     }
 
-    public static function findById(int $id){
+    public function login(string $mail, string $password){
         $dbh = Dao::openDatabase();
-        $query = "SELECT * FROM `utilisateur` WHERE `utilisateur_ID` = :utilisateur_ID;";
+        $query = "SELECT * FROM `utilisateur` WHERE `adresse_utilisateur` = :mail AND `mot_de_passe` = :password;";
         $sth = $dbh->prepare($query);
-        $sth->bindParam(":utilisateur_ID",$id);
-        $sth->execute();
-        $sth->setFetchMode(PDO::FETCH_CLASS, "Valarep\\model\\User");
-        $item = $sth->fetch();
-        Dao::closeDatabase();
-        return $item;
-    }
-
-    public static function insertUser(string $first_name, string $last_name, string $mail, string $password){
-        $dbh = Dao::openDatabase();
-        $query = "INSERT INTO `utilisateur`(`adresse_utilisateur`,`mot_de_passe`, `nom_utilisateur`,`prenom_utilisateur`) VALUES (:adresse_utilisateur, :password, :_utilisateur, :prenom_utilisateur);";
-        $sth = $dbh->prepare($query);
-        $sth->bindParam(":adresse_utilisateur", $mail);
-        $sth->bindParam(":mot_de_passe", $password);
-        $sth->bindParam(":nom_utilisateur", $last_name);
-        $sth->bindParam(":prenom_utilisateur", $first_name);
-        $sth->execute();
-        Dao::closeDatabase();
-    }
-
-    public static function login(string $mail, string $password){
-        $dbh = Dao::openDatabase();
-        $query = "SELECT * FROM `utilisateur` WHERE `adresse_utilisateur` = :adresse_utilisateur AND `mot_de_passe` = :mot_de_passe;";
-        $sth = $dbh->prepare($query);
-        $sth->bindParam(":adresse_utilisateur",$mail);
-        $sth->bindParam(":mot_de_passe",$password);
+        $sth->bindParam(":mail",$mail);
+        $sth->bindParam(":password",$password);
         $sth->execute();
         $sth->setFetchMode(PDO::FETCH_CLASS, "Valarep\\model\\User");
         $item = $sth->fetch();

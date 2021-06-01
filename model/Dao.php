@@ -2,6 +2,7 @@
 
 namespace Valarep\model;
 
+use Valarep\View;
 use PDO;
 use PDOException;
 
@@ -15,11 +16,15 @@ class Dao{
     private static $connection;
 
     public static function openDatabase(){
-        $dsn = "mysql:"."host=".self::$host.";"."port=".self::$port.";"."dbname=".self::$database.";"."charset=".self::$charset.";";
+        $dsn = "mysql:".
+            "host=".self::$host.";".
+            "port=".self::$port.";".
+            "dbname=".self::$database.";".
+            "charset=".self::$charset.";";
         try {
             self::$connection = new PDO($dsn, self::$user, self::$password);
             return self::$connection;
-        } catch (PDOException $e) {
+        } catch (PDOException $ex) {
             echo $e->getMessage();
         }
     }

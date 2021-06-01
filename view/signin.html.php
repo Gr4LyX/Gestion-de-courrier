@@ -19,7 +19,7 @@
                     <label for="password"></label>
                     <input class="form-control mdp1" type="password" name="password" id="password"
                         placeholder="Entrez votre Mot de Passe">
-                    <button class="btn btn-outline-primary btn-lg btnlog">Se connecter</button>
+                    <button type="submit" class="btn btn-outline-primary btn-lg btnlog">Se connecter</button>
                     <a href="?page=home" class="btn btn-outline-primary btn-lg btnesc">Retour</a>
                 </form>
                 <img class="logo-email" src="images/logo-email.png" alt="logo email">
