@@ -42,14 +42,13 @@ switch ($page) {
         $password = $_POST['password'];
         UserController::login($page,$login,$password);
         break;
-    case 'user-insert':
+    case 'userInsert':
         $last_name = $_POST['last_name'];
         $first_name = $_POST['first_name'];
         $mail = $_POST['mail'];
         $password = $_POST['password'];
-        UserController::insertUser($last_name, $first_name, $mail, $password,);
+        UserController::insertUser($page,$last_name, $first_name, $mail, $password,);
         break;
     default:
-        //todo: ERREUR 404
         break;
 }

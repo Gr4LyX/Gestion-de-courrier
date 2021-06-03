@@ -42,22 +42,25 @@ class UserController{
         View::display();
     }
 
-    public static function insertUser($last_name, $first_name, $mail, $password){
-        $user = new User;
-        $user->last_name = $last_name;
-        $user->first_name = $first_name;
-        $user->mail = $mail;
-        $user->password = $password;
-        $user->register();
-        $users = $user->getAll();
-        var_dump($users);
+    public static function insertUser($page, $last_name, $first_name, $mail, $password){
+        if(trim($last_name) == "" || trim($first_name) == "" || trim($password) == ""){
+            echo "Pas possible";
+        }
+        else {
+            if(strlen(trim($password)) <6){
+                echo "Mot de passe trop court";
+            } else {
+                User::register(trim($last_name), trim($first_name), trim($mail), trim($password));
+                self::signIn($page);
+            }
+        }
     }
 
     public static function login($page, string $mail, string $password){
-        $users = new User();
-        $user = $users->login($mail,$password);
-        if($user != null){
-            $_SESSION['user'] = $user;
+        $user = new User();
+        $users = $user->login($mail,$password);
+        if($users != null){
+            $_SESSION['user'] = $users;
             View::setTemplate('general');
             View::bindVariable("user", $users);
             View::display();

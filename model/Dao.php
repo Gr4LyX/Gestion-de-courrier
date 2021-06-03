@@ -24,7 +24,7 @@ class Dao{
         try {
             self::$connection = new PDO($dsn, self::$user, self::$password);
             return self::$connection;
-        } catch (PDOException $ex) {
+        } catch (PDOException $e) {
             echo $e->getMessage();
         }
     }
