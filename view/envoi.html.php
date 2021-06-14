@@ -14,49 +14,51 @@
             <p class="paragraphe2"></p>
             <h1 class="titre4">Saisie envoi de courriers</h1>
             <div class="formulaire">
-                <div class="form-group row">
-                    <label for="example-date-input" class="col-2 col-form-label datenvoi">Date d'envoi :</label>
-                    <div class="col-10">
-                        <input class="form-control date-envoi" type="date" id="example-date-input">
+                <form action="?page=insertCourrierArrive" method="post" class="form-group">
+                    <div class="form-group row">
+                        <label for="example-date-input" class="col-2 col-form-label datenvoi">Date d'envoi :</label>
+                        <div class="col-10">
+                            <input class="form-control date-envoi" type="date" id="example-date-input" name="date_envoi">
+                        </div>
                     </div>
-                </div>
-                <div class="form-group row">
-                    <label for="example-email-input" class="col-2 col-form-label destinataire">Destinataire :</label>
-                    <div class="col-10">
-                        <input class="form-control email3" type="email" placeholder="xxx@xxx.com">
+                    <div class="form-group row">
+                        <label for="example-email-input" class="col-2 col-form-label destinataire">Destinataire :</label>
+                        <div class="col-10">
+                            <input class="form-control email3" type="email" placeholder="xxx@xxx.com" name="adresse_dest" id="adresse_dest">
+                        </div>
                     </div>
-                </div>
-                <div class="form-group row">
-                    <label for="example-text-input" class="col-2 col-form-label naturela">Nature :</label>
-                    <div class="col-10">
-                        <input class="form-control nature" type="text">
+                    <div class="form-group row">
+                        <label for="example-text-input" class="col-2 col-form-label naturela">Nature :</label>
+                        <div class="col-10">
+                            <input class="form-control nature" type="text" id="objet" name="objet">
+                        </div>
                     </div>
-                </div>
-                <div class="mb-3">
-                    <label for="formFile" class="form-label piece">Pièces envoyées :</label>
-                    <input class="form-control fichier" type="file">
-                </div>
-                <select class="form-select mode-envoi" aria-label="Default select example">
-                    <option value="1">Suivi</option>
-                    <option value="2">Recommandé</option>
-                    <option value="3">Simple</option>
-                </select>
-                <label class="modenvoi">Mode d'envoi :</label>
-                <select class="form-select enregistre-par" aria-label="Default select example">
-                    <option value="1"></option>
-                    <option value="2"></option>
-                    <option value="3"></option>
-                </select>
-                <label class="enregistre">Enregistré par :</label>
-                <a class="btn btn-outline-primary btn-lg btn-ajout-courrier">Ajouter nouveau courrier</a>
-                <a href="?page=general" class="btn btn-outline-primary btn-lg btn-quitter1">Quitter</a>
-                <div class="form-floating">
-                    <textarea class="form-control Commentaire" placeholder="Observation"
-                        style="height: 100px"></textarea>
-                </div>
+                    <div class="mb-3">
+                        <label for="formFile" class="form-label piece">Pièces envoyées :</label>
+                        <input class="form-control fichier" type="file">
+                    </div>
+                    <select class="form-select mode-envoi" aria-label="Default select example" name="mode_envoi">
+                        <option value="1">Suivi</option>
+                        <option value="2">Recommandé</option>
+                        <option value="3">Simple</option>
+                    </select>
+                    <label class="modenvoi">Mode d'envoi :</label>
+                    <select class="form-select enregistre-par" aria-label="Default select example" name="num_expediteur">
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                    </select>
+                    <label class="enregistre">Enregistré par :</label>
+                    <button class="btn btn-outline-primary btn-lg btn-ajout-courrier">Ajouter nouveau courrier</button>
+                    <a href="?page=general" class="btn btn-outline-primary btn-lg btn-quitter1">Quitter</a>
+                    <div class="form-floating">
+                        <textarea class="form-control Commentaire" placeholder="Observation" style="height: 100px"
+                            name="commentaire"></textarea>
+                    </div>
             </div>
             <label class="commentaire">Observation :</label>
         </div>
+        </form>
     </div>
 </body>
 
