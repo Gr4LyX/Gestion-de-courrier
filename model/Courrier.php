@@ -11,20 +11,21 @@ class Courrier{
     public $commentaire;
     public $mail_dest;
     public $num_expediteur;
-    
-    public static function insertCourrierArrive(){
+
+    public function insertCourrierArrive(){
         $dbh = dao::openDatabase();
-        $query = "INSERT INTO `courrier`(`objet`,`commentaire`,`adresse_dest`,`num_expediteur`) VALUES (:objet, :commentaire, :mail_dest, :num_expediteur);";
+        $query = "INSERT INTO courrier(`objet`, `commentaire`, `adresse_dest`, `num_expediteur`) 
+    VALUES (:objet, :commentaire, :mail_dest, :num_expediteur);";
         $sth = $dbh->prepare($query);
-        $sth->bindParam(":objet",$objet);
-        $sth->bindParam(":commentaire",$commentaire);
-        $sth->bindParam(":mail_dest",$mail_dest);
-        $sth->bindParam(":num_expediteur",$num_expediteur);
+        $sth->bindParam(":objet",$this->objet);
+        $sth->bindParam(":commentaire",$this->commentaire);
+        $sth->bindParam(":mail_dest",$this->mail_dest);
+        $sth->bindParam(":num_expediteur",$this->num_expediteur);
         $sth->execute();
         dao::closeDatabase();
     }
 
-    public static function getAll(){
+    public function getAll(){
         $dbh = Dao::openDatabase();
         $query = "SELECT * FROM `courrier`;";
         $sth = $dbh->prepare($query);
